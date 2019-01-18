@@ -248,6 +248,9 @@ class array_params():
         self.D_denominator = np.trapz(np.trapz((np.abs(self.F)**2)*np.sin(self.TH),axis=0,x = self.phis.value[np.newaxis].T[:,0]),x=self.thetas.value)
         self.D = self.D_numerator.value/self.D_denominator.value
         self.D_dB = 10*np.log10(self.D)
+
+
+
         
         
 
